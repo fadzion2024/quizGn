@@ -1,0 +1,37 @@
+/* Structure globale */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--fond);
+    color: var(--texte);
+}
+
+header, footer {
+    text-align: center;
+    padding: var(--espacement);
+    background-color: #fff;
+    box-shadow: var(--ombre);
+}
+
+main {
+    flex: 1;
+    padding: var(--espacement);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive sections */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacement);
+}
+
+@media (min-width: 768px) {
+    .features {
+        flex-direction: row;
+    }
+}

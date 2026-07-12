@@ -1,0 +1,78 @@
+/* Boutons */
+.btn {
+    background: var(--vert);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+#listeChoix{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Cartes */
+.card {
+    background: var(--carte);
+    border-radius: var(--rayon);
+    padding: var(--espacement);
+    box-shadow: var(--ombre);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Titres */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle {
+    color: var(--gris);
+    text-align: center;
+}
+
+/* Badges, progression, icônes */
+.badge {
+    background: var(--ocre);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+.progress-bar {
+    height: 10px;
+    background: var(--gris-clair);
+    border-radius: var(--rayon);
+    overflow: hidden;
+}
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: var(--vert);
+    width: 50%; /* exemple */
+}
+.icon-cauri {
+    color: var(--ocre-clair);
+    font-size: 1.5rem;
+}
+.icon-xp {
+    color: var(--rouge);
+    font-size: 1.5rem;
+}

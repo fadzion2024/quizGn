@@ -1,0 +1,20 @@
+/* Ajustements spécifiques à la page */
+header img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+main img {
+    max-width: 300px;
+    margin-bottom: var(--espacement);
+    border-radius: var(--rayon);
+    box-shadow: var(--ombre);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--gris);
+}
+.cache{
+    display:none;
+}
