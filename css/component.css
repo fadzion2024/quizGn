@@ -1,0 +1,400 @@
+/* Boutons */
+.btn {
+    background: var(--gris-clair);
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+#listeChoix{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn-selectionne{
+
+    background-color: var(--vert-clair);
+
+    color: white;
+
+    border: 2px solid #326132;
+
+}
+
+/* =====================================
+   BOUTONS DE RÉPONSE
+===================================== */
+
+#listeChoix {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+#listeChoix .btn {
+    width: 100%;
+    padding: 14px 18px;
+
+    background-color: #FAFAFA;
+    color: #0F0F0F;
+
+    border: 2px solid #D9D9D9;
+    border-radius: 12px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* Survol */
+
+#listeChoix .btn:hover {
+    border-color: #326132;
+}
+
+
+/* Réponse sélectionnée */
+
+#listeChoix .btn-selectionne {
+    background-color: #D9D9D9;
+    border-color: #326132;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   BOUTON VALIDER
+===================================== */
+
+#btnValider {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #326132;
+    color: #FAFAFA;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+#btnValider:hover {
+    opacity: 0.85;
+}
+/* Cartes */
+.card {
+    background: var(--carte);
+    border-radius: var(--rayon);
+    padding: var(--espacement);
+    box-shadow: var(--ombre);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Titres */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.subtitle {
+    color: var(--gris);
+    text-align: center;
+}
+
+/* Badges, progression, icônes */
+.badge {
+    background: var(--ocre);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+.progress-bar {
+    height: 10px;
+    background: var(--gris-clair);
+    border-radius: var(--rayon);
+    overflow: hidden;
+}
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: var(--vert);
+    width: 50%; /* exemple */
+}
+.icon-cauri {
+    color: var(--ocre-clair);
+    font-size: 1.5rem;
+}
+.icon-xp {
+    color: var(--rouge);
+    font-size: 1.5rem;
+}
+.feedback{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+}
+.feedback-bon{
+
+    background:#E7F8EC;
+
+    color:#326132;
+
+}
+.feedback-mauvais{
+
+    background:#FDECEC;
+
+    color:#8C2F2F;
+
+}
+#cauris {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cauri {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+#zoneScore{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+    color:#326132;
+
+}
+.progression{
+
+    width:100%;
+    height:14px;
+
+    background:#E5E5E5;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:15px 0 5px;
+
+}
+#barreProgression{
+
+    width:0%;
+
+    height:100%;
+
+    background:#326132;
+
+    transition:width .4s ease;
+
+}
+#pourcentageProgression{
+
+    text-align:right;
+
+    font-weight:bold;
+
+    color:#326132;
+
+    margin-bottom:20px;
+
+}
+
+#zoneNiveau{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#C89B3C;
+
+    margin:10px 0;
+
+}
+/* =====================================
+   BOÎTE DE DIALOGUE NIVEAU
+===================================== */
+
+.boite-niveau {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(15, 15, 15, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* Contenu de la boîte */
+
+.contenu-niveau {
+
+    width: 90%;
+    max-width: 420px;
+
+    background-color: #FAFAFA;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* Icône */
+
+.icone-niveau {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Titre */
+
+.contenu-niveau h2 {
+
+    color: #326132;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Ancien niveau */
+
+.ancien-niveau {
+
+    color: #6B6B6B;
+
+    margin: 15px 0;
+
+}
+
+
+/* Flèche */
+
+.fleche-niveau {
+
+    font-size: 30px;
+
+    color: #C89B3C;
+
+}
+
+
+/* Nouveau niveau */
+
+.nouveau-niveau {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #326132;
+
+    margin: 15px 0 25px;
+
+}
+
+/* =====================================
+   ÉCRAN DE FIN
+===================================== */
+
+.ecran-fin {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.icone-fin {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.ecran-fin h2 {
+    margin-bottom: 15px;
+}
+
+.resultat-fin {
+    margin: 25px 0;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+}
+
+.resultat-fin p {
+    margin: 8px 0;
+}
+
+.message-fin {
+    color: #6B6B6B;
+    margin: 20px 0;
+}
+
+.ecran-fin .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #326132;
+    color: #FAFAFA;
+    font-weight: bold;
+    cursor: pointer;
+}
