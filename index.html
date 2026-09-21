@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>QuizGn Guinée culture</title>
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <img src="assets/images/logo.jpeg" alt="logo QuizGN">
+    </header>
+    
+    <main>
+
+        <!-- PAGE D'ACCUEIL -->
+        <section id="accueil">
+    
+            <h1 class="title">QuizGN</h1>
+    
+            <p class="subtitle">Deviens Sage de la Cité</p>
+    
+            <button id="btnCommencer" class="btn">
+                Commencer l'aventure
+            </button>
+    
+        </section>
+    
+    
+        <!-- PAGE QUIZ -->
+        <section id="quiz" class="cache">
+            <div id="zoneCauris">
+                
+            </div>
+            <div id="zoneScore">
+
+                ⭐ Score : <span id="scoreActuel">0</span>
+            
+            </div>
+            <div id="zoneNiveau">
+
+                🌱 <span id="niveauActuel">Curieux</span>
+
+            </div>
+            <div class="progression">
+
+                <div id="barreProgression"></div>
+
+            </div>
+
+            <p id="pourcentageProgression">0 %</p>
+
+            <h2 id="numeroQuestion"></h2>
+        
+            <h3 id="texteQuestion"></h3>
+        
+            <div id="listeChoix">
+        
+            </div>
+            <div id="feedback" class="feedback cache">
+               
+            </div>
+            <br>
+            <button id="btnValider" class="btn">
+                Valider
+            </button>
+            
+        </section>
+    
+    </main>
+    
+    <footer>
+        <p>© 2026 QuizGN - Tous droits réservés - voz prestations</p>
+    </footer>
+    <script src="js/questions.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/cauris.js"></script>
+    <script src="js/progression.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
